@@ -1,0 +1,39 @@
+{
+  "name": "cra-template-hippy-react",
+  "version": "0.0.2",
+  "description": "The base template for Create Hippy-react App",
+  "main": "template.json",
+  "scripts": {
+    "serve": "webpack-dev-server --config ./scripts/hippy-webpack.web.js",
+    "build": "webpack --config ./scripts/hippy-webpack.web.js",
+    "hippy:debug": "hippy-debug",
+    "hippy:dev": "webpack --config ./scripts/hippy-webpack.dev.js",
+    "hippy:vendor": "webpack --config ./scripts/hippy-webpack.ios-vendor.js --config ./scripts/hippy-webpack.android-vendor.js",
+    "hippy:build": "webpack --config ./scripts/hippy-webpack.ios.js --config ./scripts/hippy-webpack.android.js"
+  },
+  "author": "xxs665",
+  "keywords": [
+    "react",
+    "create-react-app",
+    "template",
+    "hippy",
+    "hippy-react",
+    "cra-template"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/xxs665/cra-template-hippy-react.git"
+  },
+  "engines": {
+    "node": ">=8"
+  },
+  "bugs": {
+    "url": "https://github.com/xxs665/cra-template-hippy-react/issues"
+  },
+  "files": [
+    "template",
+    "template.json"
+  ],
+  
+  "license": "ISC"
+}
