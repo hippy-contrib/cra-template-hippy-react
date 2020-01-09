@@ -1,4 +1,13 @@
 {
+  "main": "src/index.js",
+  "scripts": {
+    "serve": "webpack-dev-server --config ./build/hippy-webpack.web.js",
+    "build": "webpack --config ./build/hippy-webpack.web.js",
+    "hippy:debug": "hippy-debug",
+    "hippy:dev": "webpack --config ./build/hippy-webpack.dev.js",
+    "hippy:vendor": "webpack --config ./build/hippy-webpack.ios-vendor.js --config ./build/hippy-webpack.android-vendor.js",
+    "hippy:build": "webpack --config ./build/hippy-webpack.ios.js --config ./build/hippy-webpack.android.js"
+  },
   "dependencies": {
     "@testing-library/react": "^9.3.2",
     "@testing-library/jest-dom": "^4.2.4",
@@ -7,9 +16,7 @@
     "hippy-react-web": "^2.0.0",
     "react": "^16.12.0",
     "react-dom": "^16.12.0",
-    "regenerator-runtime": "^0.13.3"
-  },
-  "devDependencies": {
+    "regenerator-runtime": "^0.13.3",
     "@babel/core": "^7.7.5",
     "@babel/plugin-proposal-class-properties": "^7.7.4",
     "@babel/preset-env": "^7.7.6",

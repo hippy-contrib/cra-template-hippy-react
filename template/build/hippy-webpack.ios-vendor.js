@@ -2,7 +2,7 @@ const path                        = require('path');
 const webpack                     = require('webpack');
 const CaseSensitivePathsPlugin    = require('case-sensitive-paths-webpack-plugin');
 
-const platform = 'android';
+const platform = 'ios';
 
 module.exports = {
   mode: 'production',
@@ -32,7 +32,7 @@ module.exports = {
   module: {
     rules: [
       {
-        test: /\.(js)$/,
+        test: /\.(jsx?)$/,
         use: [
           {
             loader: 'babel-loader',
@@ -42,7 +42,7 @@ module.exports = {
                   '@babel/preset-env',
                   {
                     targets: {
-                      chrome: 57,
+                      ios: 8,
                     },
                   },
                 ],
@@ -57,8 +57,5 @@ module.exports = {
   resolve: {
     extensions: ['.js', '.jsx', '.json'],
     modules: [path.resolve(__dirname, '../node_modules')],
-    alias: {
-      'hippy-react': path.resolve(__dirname, '../../../packages/hippy-react'),
-    },
   },
 };

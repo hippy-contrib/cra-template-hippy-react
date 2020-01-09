@@ -10,7 +10,7 @@ const styles = StyleSheet.create({
     flex: 1,
     backgroundColor: '#fff',
     justifyContent: 'center',
-    justifyContent: 'center',
+    alignItems: 'center',
   }
 });
 

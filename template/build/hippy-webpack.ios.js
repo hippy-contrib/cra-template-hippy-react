@@ -12,7 +12,7 @@ module.exports = {
   mode: 'production',
   bail: true,
   entry: {
-    index: ['regenerator-runtime', path.resolve(pkg.main)],
+    index: ['regenerator-runtime', path.resolve('./src/main.js')],
   },
   output: {
     filename: `[name].${platform}.js`,
@@ -73,8 +73,5 @@ module.exports = {
   resolve: {
     extensions: ['.js', '.jsx', '.json'],
     modules: [path.resolve(__dirname, '../node_modules')],
-    alias: {
-      'hippy-react': path.resolve(__dirname, '../../../packages/hippy-react'),
-    },
   },
 };
