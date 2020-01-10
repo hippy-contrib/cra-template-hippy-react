@@ -41,7 +41,7 @@
     HippyBridge *bridge = [[HippyBridge alloc] initWithBundleURL: [NSURL
                                                URLWithString:@"http://127.0.0.1:38989/index.bundle"]
                                               moduleProvider: nil
-                                               launchOptions: nil];
+                                               launchOptions: @{@"DebugMode": @true}];
     HippyRootView * rootView = [[HippyRootView alloc] initWithBridge:bridge moduleName:@"demo" initialProperties:nil shareOptions:@{} delegate:nil];
     rootView.autoresizingMask = UIViewAutoresizingFlexibleHeight | UIViewAutoresizingFlexibleWidth;
     rootView.frame = self.view.bounds;
