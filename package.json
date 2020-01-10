@@ -1,6 +1,6 @@
 {
   "name": "cra-template-hippy-react",
-  "version": "0.0.8",
+  "version": "0.0.9",
   "description": "The base template for Create Hippy-react App",
   "main": "template.json",
   "author": "xxs665",
