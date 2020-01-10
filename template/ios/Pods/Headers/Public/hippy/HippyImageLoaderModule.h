@@ -1,0 +1,1 @@
+../../../hippy/ios/sdk/module/image loader/HippyImageLoaderModule.h

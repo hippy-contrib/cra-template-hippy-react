@@ -1,0 +1,1 @@
+../../../hippy/ios/sdk/component/viewPager/HippyViewPagerManager.h

@@ -1,0 +1,1 @@
+../../../hippy/ios/sdk/module/animation/HippyExtAnimationModule.h

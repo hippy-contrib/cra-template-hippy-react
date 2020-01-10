@@ -1,0 +1,1 @@
+../../../hippy/core/modules/module-base.h
