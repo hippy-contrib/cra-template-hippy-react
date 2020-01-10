@@ -3,6 +3,7 @@
   "scripts": {
     "serve": "webpack-dev-server --config ./build/hippy-webpack.web.js",
     "build": "webpack --config ./build/hippy-webpack.web.js",
+    "hippy:ios": "node ./build/run-ios.js",
     "hippy:debug": "hippy-debug",
     "hippy:dev": "webpack --config ./build/hippy-webpack.dev.js",
     "hippy:vendor": "webpack --config ./build/hippy-webpack.ios-vendor.js --config ./build/hippy-webpack.android-vendor.js",
@@ -31,6 +32,8 @@
     "style-loader": "^1.0.2",
     "unicode-loader": "^1.0.7",
     "url-loader": "^3.0.0",
+    "shelljs": "^0.8.3",
+    "util": "^0.12.1",
     "webpack": "^4.41.3",
     "webpack-cli": "^3.3.10",
     "webpack-dev-server": "^3.9.0"
