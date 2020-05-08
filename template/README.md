@@ -4,23 +4,41 @@
 
 ## 启动项目
 
-### `npm run hippy:dev`
+### web版本
 
-启动本地打包，webpack watch模式
+```shell
+npm run serve
+```
 
-### `npm run hippy:debug`
+在浏览器中输入 `http://localhost:8080/{{YourProjectName}}.html#/`
 
-启动本地服务，提供js访问
+### hippy 版本
 
-[http://127.0.0.1:38989/index.bundle](http://127.0.0.1:38989/index.bundle)
+#### 启动项目
 
-## 启动ios模拟器
+```shell
+npm run serve:hippy // npm run hippy:dev & npm run hippy:debug & npm run hippy:ios
+```
 
-> hippy 是基于客户端原生开发的，这里提供了建议的调试工程
+#### 启动模拟器/真机
 
-### `open ./ios/hippyDemo.xcworkspace`
+* 启动ios模拟器
+
+```shell
+npm run hippy:ios
+```
+
+或者直接打开ios项目，本地编译
 
 1. 打开`./ios`下的功能
 2. xcode中构建，拉起模拟器
 
 *注：ios目前不支持热加载，需要手动reload更新, `cmd+R`*
+
+
+* 连接android虚拟机
+
+```shell
+npm run hippy:and
+```
+启动本地打包，webpack watch模式

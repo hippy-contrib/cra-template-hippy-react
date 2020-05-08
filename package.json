@@ -9,18 +9,18 @@
     "create-react-app",
     "template",
     "hippy",
-    "hippy-react",
+    "@hippy/react",
     "cra-template"
   ],
   "repository": {
     "type": "git",
-    "url": "https://github.com/xxs665/cra-template-hippy-react.git"
+    "url": "https://github.com/hippy-contrib/cra-template-hippy-react.git"
   },
   "engines": {
     "node": ">=8"
   },
   "bugs": {
-    "url": "https://github.com/xxs665/cra-template-hippy-react/issues"
+    "url": "https://github.com/hippy-contrib/cra-template-hippy-react/issues"
   },
   "files": [
     "template",
