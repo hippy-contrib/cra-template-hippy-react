@@ -26,7 +26,7 @@ module.exports = {
     }),
     new CaseSensitivePathsPlugin(),
     new webpack.DllReferencePlugin({
-      context: process.cwd(),
+      context: path.resolve('..'),
       manifest,
     }),
   ],
